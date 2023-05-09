@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="grace's homepage">
+    <meta name="keywords" content="grace manning, homepage, cows">
+    <meta name="author" content="grace manning">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <title>grace's portal</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script> 
+        $(function(){
+          $("#navbarSection").load("components/navbar.html"); 
+        });
+        $(function(){
+          $("#extrasSection").load("components/extras.html"); 
+        });
+        $(function(){
+          $("#sidebarSection").load("components/sidebar.html"); 
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div id="navbarSection"></div>
+        <div class="mainhbox">
+            <div id="extrasSection"></div>
+            <div class="mainContent">
+                <div class="pagecontent">
+                    <div>
+                        <p class="textcontent">
+                            hello! I'm Grace, welcome to my *~*~portal~*~* on the internet.
+                            I will write more here later!
+                        </p>
+                    </div>
+                </div>
+                <div class="twocolpagegrid">
+                    <div class="onecolgrid">
+                        <div class="navgriditem">
+                            <a href="pages/about.html" style="display:inline;"><b>about</b></a>
+                            <p style="display:inline;"> - about me :)</p>
+                        </div>
+                        <div class="navgriditem">
+                            <a href="/blog/" style="display:inline;"><b>blog</b></a>
+                            <p style="display:inline;"> - my blog on whatever i wanna talk about</p>
+                        </div>
+                        <div class="navgriditem">
+				            <a href="/reviews/" style="display:inline;"><b>reviews</b></a>
+				            <p style="display:inline;"> - my reviews, mainly music but other stuff as well</p>
+                        </div>
+                        <div style="padding: 15px 8px 15px 8px;">
+				            <a href="/software/" style="display:inline;"><b>software</b></a>
+				            <p style="display:inline;"> - my definitely existing software</p>
+                        </div>
+                    </div>
+                    <div class="onecolgrid">
+                        <center>
+                            <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
+                                <img src="http://www.allaboutfrogs.org/funstuff/frogtest/result12.jpg"  width=215 height=100 alt="I'm a Pac Man Frog!" border="0"  >
+                            </a>
+                            <br>Argentinian Horned frogs seem to have been designed for the sole purpose of eating as much as possible. They appear to consist of two main parts: a mouth and a stomach. This is probably where they got the nickname "PacMan". Their needs are fairly simple, a warm habitat in a simple plastic box or aquarium with some shallow water and a few rocks so that they can laze around all day suits them just fine. They don't mix well with other frogs, even in their own species, as they are just as likely to eat them.<p><a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">What kind of Frog are <i>you</i>?</a>
+                        </center>
+                    </div>
+                    <div class="onecolgrid">
+                        <h2 class="centered">latest blog post</h2>
+                        <a class="centered" href="">no blog posts atm</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div id="sidebarSection"></div>
+            </div>
+        </div>
+    </div>
+</body>
