@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,17 +7,17 @@
 }
 
 :root {
-	--main-text-color: #c5c5f0;
-	--blue-accent: #aaaaff;
-	--pink-accent: #ff8fff;
+	--main-text-color: #065C5C;
+	--blue-accent: #065C5C;
+	--pink-accent: #065C5C;
 	--red-accent: #ff5050;
 }
 
 body {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
-	background-image: url(background.gif);
-	background-repeat: repeat;
-	background-color: black;
+	/*background-image: url(background.gif);
+	background-repeat: repeat;*/
+	background-color: #c5c5f0;
 	color: var(--main-text-color);
 }
 
@@ -27,11 +29,30 @@ a:visited {
 	color: var(--blue-accent);
 }
 
+.navheadertext{
+	font-family: 'Asul', sans-serif;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	line-height: 1px;
+}
+
+#navtitle{
+	font-size: 26px;
+}
+
+#navsubtitle{
+	font-size: 18px;
+}
+
 .navheader{
+	font-family: 'Asul', sans-serif;
 	display: flex;
 	flex-direction: row;
 	margin-left: 20px;
 	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
 }
 
 .navdash {
@@ -51,25 +72,11 @@ a:visited {
 	margin: 0;
 }
 
-.logo {
-	text-align: center;
-	font-family: vga, monospace;
-	line-height: 1;
-	background-image: linear-gradient(var(--blue-accent),var(--blue-accent),var(--blue-accent),var(--pink-accent),var(--pink-accent),var(--red-accent),var(--red-accent),var(--main-text-color),var(--main-text-color),var(--main-text-color));
-	background-repeat: no-repeat;
-	background-clip: text;
-	color: transparent;
-	
-	-webkit-background-clip: text;
-	
-	text-shadow: 0px 0px 50px #888888;
-}
-
-
 .sidebar {
 	max-width: 300px;
 	width: 100%;
 	border-style: solid;
+	padding: 5px;
 	padding-bottom: 16px;
 }
 
