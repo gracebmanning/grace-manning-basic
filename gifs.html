@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="grace's homepage">
+  <meta name="keywords" content="grace manning, homepage, cows">
+  <meta name="author" content="grace manning">
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="icon" type="image/png" href="assets/favicon.ico">
+
+  <title>grace's portal</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#navbarSection").load("components/navbar.html");
+    });
+    $(function () {
+      $("#sidebarSection").load("components/sidebar.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="navbarSection"></div>
+    <div class="mainSection">
+      <div class="mainContent">
+        <div class="contentBoxCenter">
+          <p>items are linked to their original source :-)</p>
+          most gifs are from <a href="https://gifcities.org/" target="_blank">GifCities.org</a>!
+        </div>
+        <!--SMALL ASSETS-->
+        <div class="contentBoxCenter">
+          <p>
+          <h3>Small</h3>
+          <a class="gifLink"
+            href="https://web.archive.org/web/20090902203215/http://geocities.com/voortcow/Victims.html"
+            target="_blank">
+            <img src="./assets/gifs/cow.gif">
+          </a>
+          <a class="gifLink"
+            href="https://web.archive.org/web/20091027035606/http://es.geocities.com/melgarbeatles6/prolpg.html"
+            target="_blank">
+            <img src="./assets/gifs/construction.gif">
+          </a>
+          <a class="gifLink"
+            href="https://web.archive.org/web/20091022224324/http://geocities.com/yatesacupuncture/contact_us.html"
+            target="_blank">
+            <img src="./assets/gifs/flying_envelope.gif">
+          </a>
+          </p>
+        </div>
+        <!--MEDIUM ASSETS-->
+        <div class="contentBoxCenter">
+          <p>
+          <h3>Medium</h3>
+          <a class="gifLink"
+            href="https://web.archive.org/web/20090831195128/http://geocities.com/catsareus_2000/?200410"
+            target="_blank">
+            <img src="./assets/gifs/CATONPIANO.gif">
+          </a>
+          </p>
+        </div>
+        <!--LARGE ASSETS-->
+        <div class="contentBoxCenter">
+          <p>
+          <h3>Large</h3>
+          <a class="gifLink"
+            href="https://web.archive.org/web/20091021164347/http://geocities.com/absoluteserenity123/therapies2.html"
+            target="_blank">
+            <img src="./assets/gifs/bigButterfly.gif">
+          </a>
+          <a class="gifLink"
+            href="https://web.archive.org/web/20091027081800/http://hk.geocities.com/meelin292002/miriam.htm"
+            target="_blank">
+            <img src="./assets/gifs/star_rainbow.gif">
+          </a>
+          </p>
+        </div>
+      </div>
+      <div id="sidebarSection"></div>
+    </div>
+  </div>
+</body>
