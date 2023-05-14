@@ -63,17 +63,18 @@ a:hover {
 	transition: 0.2s ease-out;
 }
 
+/* NAVBAR */
 .nav{
+	font-family: 'Asul', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: 0px;
-	font-family: 'Asul', sans-serif;
 }
 
 #navbarSection{
-	width: 300px;
+	max-width: 300px;
 }
 
 .navheadertext{
@@ -103,7 +104,7 @@ a:hover {
 .navstars {
 	overflow: hidden;
 	white-space: nowrap;
-	width: 85%;
+	max-width: 85%;
 	margin-top: 10px;
 }
 
@@ -119,10 +120,11 @@ a:hover {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 50px;
-	gap: 20px;
+	gap: 15px;
 	width: 100%;
 }
 
+/* MAIN CONTENT */
 .container {
 	margin: auto;
 	display: flex;
@@ -163,6 +165,7 @@ a:hover {
 	background-color: #FFF2D4;
 }
 
+/* SIDEBAR */
 #sidebarSection{
 	margin-top: 20px;
 	width: 20%;
@@ -176,8 +179,22 @@ a:hover {
 	background-color: #FFF2D4;
 }
 
+/* RESEARCH PAGE */
+.research-title{
+	margin: 0px;
+}
+
+#research-poster{
+	width: 85%;
+}
+
+/* SOURCES PAGE */
 .gifLink{
 	text-decoration: none;
+}
+
+.gifAsset{
+	height: 75px;
 }
 
 /* INDIVIDUAL TEXT STYLES */
