@@ -94,6 +94,10 @@ a:hover {
 	transition: 0.2s ease-out;
 }
 
+.nomargins{
+	margin: 0px;
+}
+
 /* NAVBAR */
 .nav{
 	font-family: 'Asul', sans-serif;
@@ -222,17 +226,28 @@ a:hover {
 	background-color: #FFF2D4;
 }
 
-.sidebarh3{
-	margin: 0px;
-}
-
 /* RESEARCH PAGE */
-.research-title{
-	margin: 0px;
-}
-
 #research-poster{
 	width: 85%;
+}
+
+/* FAVORITES PAGE */
+.favoritesContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.albumTile{
+	display: flex;
+	flex-direction: column;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 130px;
+}
+
+.albumCover{
+	width: 130px;
 }
 
 /* FORTUNE TELLER PAGE */
