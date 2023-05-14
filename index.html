@@ -18,80 +18,44 @@
             $("#navbarSection").load("components/navbar.html");
         });
         $(function () {
-            $("#extrasSection").load("components/extras.html");
-        });
-        $(function () {
             $("#sidebarSection").load("components/sidebar.html");
         });
     </script>
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <div id="navbarSection"></div>
-        <div class="mainhbox">
-            <div id="extrasSection"></div>
+        <div class="mainSection">
             <div class="mainContent">
-                <div class="pagecontent">
-                    <div>
-                        <p class="textcontent">
-                            hello! I'm Grace, welcome to my *~*~portal~*~* on the internet.
-                            I will write more here later!
-                        </p>
-                    </div>
+                <div class="contentBoxCenter">
+                    <p id="hiImGrace">Hi, I'm Grace!</p>
+                    <img id="cow" src="../../assets/images/cow.png">
+                    <p>(I'm not a cow...I'm a person.)</p>
                 </div>
-                <div class="twocolpagegrid">
-                    <div class="onecolgrid">
-                        <div class="navgriditem">
-                            <a href="about.html" style="display:inline;"><b>about</b></a>
-                            <p style="display:inline;"> - about me :)</p>
-                        </div>
-                        <div class="navgriditem">
-                            <a href="projects.html" style="display:inline;"><b>projects</b></a>
-                            <p style="display:inline;"> - view my current software projects</p>
-                        </div>
-                        <div class="navgriditem">
-                            <a href="research.html" style="display:inline;"><b>research</b></a>
-                            <p style="display:inline;"> - check out my undergrad research</p>
-                        </div>
-                        <div class="navgriditem">
-                            <a href="blog.html" style="display:inline;"><b>blog</b></a>
-                            <p style="display:inline;"> - read my thoughts in my blog!</p>
-                        </div>
-                        <div class="navgriditem">
-                            <a href="videos.html" style="display:inline;"><b>videos</b></a>
-                            <p style="display:inline;"> - videos i've created</p>
-                        </div>
-                        <div class="navgriditem">
-                            <a href="favorites.html" style="display:inline;"><b>my favorites</b></a>
-                            <p style="display:inline;"> - my favorite albums, movies, and more</p>
-                        </div>
-                    </div>
-                    <div class="onecolgrid">
-                        <center>
-                            <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
-                                <img src="http://www.allaboutfrogs.org/funstuff/frogtest/result12.jpg" width=215
-                                    height=100 alt="I'm a Pac Man Frog!" border="0">
-                            </a>
-                            <br>Argentinian Horned frogs seem to have been designed for the sole purpose of eating as
-                            much as possible. They appear to consist of two main parts: a mouth and a stomach. This is
-                            probably where they got the nickname "PacMan". Their needs are fairly simple, a warm habitat
-                            in a simple plastic box or aquarium with some shallow water and a few rocks so that they can
-                            laze around all day suits them just fine. They don't mix well with other frogs, even in
-                            their own species, as they are just as likely to eat them.<p><a
-                                    href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">What kind of Frog are
-                                    <i>you</i>?</a>
-                        </center>
-                    </div>
+                <div class="contentBoxLeft">
+                    <p>
+                        Welcome to my *~*~portal~*~* on the internet.
+                        I will write more here later!
+                    </p>
                 </div>
-                <div class="onecolgrid">
-                    <h2 class="centered">latest blog post</h2>
-                    <a class="centered" href="">no blog posts atm</a>
+                <div class="contentBoxCenter">
+                    What kind of frog am I?<br><br>
+                    <a href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">
+                        <img src="http://www.allaboutfrogs.org/funstuff/frogtest/result12.jpg" width=215 height=100
+                            alt="I'm a Pac Man Frog!" border="0">
+                    </a>
+                    <br>Argentinian Horned frogs seem to have been designed for the sole purpose of eating as
+                    much as possible. They appear to consist of two main parts: a mouth and a stomach. This is
+                    probably where they got the nickname "PacMan". Their needs are fairly simple, a warm habitat
+                    in a simple plastic box or aquarium with some shallow water and a few rocks so that they can
+                    laze around all day suits them just fine. They don't mix well with other frogs, even in
+                    their own species, as they are just as likely to eat them.<p><a
+                            href="http://www.allaboutfrogs.org/funstuff/frogtest.php3">What kind of Frog are
+                            <i>you</i>?</a>
                 </div>
             </div>
-            <div>
-                <div id="sidebarSection"></div>
-            </div>
+            <div id="sidebarSection"></div>
         </div>
     </div>
 </body>

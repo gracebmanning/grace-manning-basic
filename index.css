@@ -1,225 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&display=swap');
+@font-face{
+    font-family: 'Royal Acidbath Open';
+    src: url('../../assets/fonts/Royalacid_open.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+/* width */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #FFF2D4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #B3B3F2;
+    border-radius: 20px;
+    border: 3px solid #B3B3F2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #A0A0E7;
+    border: 3px solid #A0A0E7;
 }
 
 :root {
 	--main-text-color: #065C5C;
-	--blue-accent: #065C5C;
+	--orange-accent: #E29D00;
 	--pink-accent: #065C5C;
-	--red-accent: #ff5050;
 }
 
 body {
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	/*background-image: url(background.gif);
-	background-repeat: repeat;*/
-	background-color: #c5c5f0;
+	background-repeat: repeat;
+	background-color: #c5c5f0;*/
+	background-color: rgba(211, 211, 242, 0.9);
 	color: var(--main-text-color);
+	margin: 0px;
 }
 
-a:link {
-	color: var(--pink-accent);
+p{
+	margin: 0px;
 }
 
-a:visited {
-	color: var(--blue-accent);
+a{
+	color: var(--main-text-color);
+	transition: 0.2s ease-in;
+}
+
+a:hover {
+	color: var(--orange-accent);
+	transition: 0.2s ease-out;
+}
+
+.nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	font-family: 'Asul', sans-serif;
+}
+
+#navbarSection{
+	width: 300px;
 }
 
 .navheadertext{
-	font-family: 'Asul', sans-serif;
 	display: flex;
 	flex-direction: column;
-	margin-left: 10px;
+	align-items: center;
+	justify-content: center;
 	line-height: 1px;
 }
 
 #navtitle{
-	font-size: 26px;
+	font-size: 24px;
 }
 
 #navsubtitle{
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .navheader{
-	font-family: 'Asul', sans-serif;
 	display: flex;
 	flex-direction: row;
-	margin-left: 20px;
 	margin-top: 20px;
 	align-items: center;
 	justify-content: center;
 }
 
-.navdash {
+.navstars {
 	overflow: hidden;
 	white-space: nowrap;
+	width: 85%;
+}
+
+.navlink{
+	margin: 0px;
 }
 
 .navlinks {
-	margin: auto;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
 	gap: 20px;
-}
-
-.navsep {
-	margin: 0;
-}
-
-.sidebar {
-	max-width: 300px;
 	width: 100%;
-	border-style: solid;
-	padding: 5px;
-	padding-bottom: 16px;
 }
 
-.sidebaradd {
-	margin: auto;
-	text-align: center;
-	margin-top: 16px;
-	margin-bottom: 16px;
-}
-
-.extras {
+.container {
 	margin: auto;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	gap: 5px;
 }
 
-.sidebarheader {
-	text-align: center;
-	margin-bottom: 7px;
-	margin-top: 7px;
-}
-
-h2.sidebarheader {
-	margin-top: 16px;
-	font-size: 32px;
-	text-align: center;
-}
-
-h3.sidebarheader {
-	text-align: center;
-	margin-bottom: 7px;
-}
-
-.socials {
-	margin: auto;
+.mainSection{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 8px;
-}
-
-.est {
-	font-size: 13px;
-	text-align: center;
-	margin-bottom: 0px;
-	margin-left: 8px;
-	margin-right: 8px;
-}
-
-.bio {
-	text-align: center;
-	margin: auto;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top: -5px;
-}
-
-.mainhbox {
-	margin: auto;
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	max-width: 1500px;
+	flex-direction: row;
+	width: 78%;
+	height: 100vh;
+	background: url('../../assets/images/rollinghills.jpg');
 }
 
 .mainContent {
-	width: 100%;
-	max-width: 900px;
+	width: 80%;
+	margin-top: 20px;
 }
 
-.pagecontent {
-	margin: 0px 12px 8px 12px;
+.contentBoxCenter {
+	margin: 0px 10px 8px 10px;
 	border: solid;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 16px;
+	background-color: #FFF2D4;
+	text-align: center;
 }
 
-.textcontent {
-	margin: 0px 0px 0px 0px;
-}
-
-.download {
-	border: dotted;
+.contentBoxLeft {
+	margin: 0px 10px 8px 10px;
+	border: solid;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 6px;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 16px;
+	background-color: #FFF2D4;
 }
 
-.download_vbox {
-	text-align: right;
+#sidebarSection{
+	margin-top: 20px;
+	width: 20%;
 }
 
-.checksum {
-	font-size: 13px;
-	margin-top: 3px;
-	margin-bottom: 5px;
+.sidebar {
+	padding: 5px;
+	padding-bottom: 16px;
+	margin-right: 10px;
+
+	border-style: solid;
+	background-color: #FFF2D4;
 }
 
-.download_description {
-	margin-bottom: 5px;
-	margin-top: 3px;
-	max-width: 400px;
+/* INDIVIDUAL TEXT STYLES */
+#hiImGrace{
+	font-family: "Royal Acidbath Open";
+    color: #E29D00;
+    font-size: 70px;
+	font-weight: bold;
+	margin: 0px;
 }
 
-#sidebarInclude {
-	margin-bottom: 8px;
-}
-
-.red_text {
-	color: var(--red-accent);
-}
-
-.webringtext {
-	margin-bottom: 0px;
-}
-
-.twocolpagegrid {
-		margin: 0px 12px 8px 12px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-}
-
-.onecolgrid {
-    display: grid;
-    gap: 0px;
-    grid-template-columns: 100%;
-    align-items: center;
-    border: solid;
-}
-
-.navgriditem {
-	border-style: none none solid none;
-	padding: 15px 8px 15px 8px;
-}
-
-.centered {
-	text-align: center;
+#cow{
+	height: 200px;
 }
