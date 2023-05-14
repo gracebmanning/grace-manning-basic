@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&display=swap');
 @font-face{
     font-family: 'Royal Acidbath Open';
-    src: url('../../assets/fonts/Royalacid_open.woff') format('woff');
+    src: url('./assets/fonts/Royalacid_open.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "TiltPenX";
+    src: url("./assets/fonts/TiltPenX.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -165,6 +172,11 @@ a:hover {
 	background-color: #FFF2D4;
 }
 
+.twoColumnBox{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 /* SIDEBAR */
 #sidebarSection{
 	margin-top: 20px;
@@ -179,6 +191,10 @@ a:hover {
 	background-color: #FFF2D4;
 }
 
+.sidebarh3{
+	margin: 0px;
+}
+
 /* RESEARCH PAGE */
 .research-title{
 	margin: 0px;
@@ -186,6 +202,65 @@ a:hover {
 
 #research-poster{
 	width: 85%;
+}
+
+/* FORTUNE TELLER PAGE */
+.fortunes-title-container{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.orange-tape{
+    width: 80%;
+    height: 150px;
+}
+
+.fortunes-title{
+    position: absolute;
+    font-family: "TiltPenX";
+    font-size:70px;
+	color: black;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.get-fortune-button{
+    background-color: #065C5C;
+    color: white;
+    font-family: 'Asul', sans-serif;
+    font-size: 22px;
+    width: 200px;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+}
+
+#your-fortune-is{
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'IM Fell Great Primer', serif;
+}
+
+#fortune-text{
+    padding: 15px;
+    min-width: 70%;
+    min-height: 20vh;
+    
+	font-size: 25px;
+	font-family: 'Asul', sans-serif;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* SOURCES PAGE */
@@ -197,7 +272,7 @@ a:hover {
 	height: 75px;
 }
 
-/* INDIVIDUAL TEXT STYLES */
+/* RANDOM */
 #hiImGrace{
 	font-family: "Royal Acidbath Open";
     color: #E29D00;
@@ -208,4 +283,8 @@ a:hover {
 
 #cow{
 	height: 200px;
+}
+
+#catonpiano-gif{
+	width: 250px;
 }
