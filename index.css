@@ -241,13 +241,27 @@ a:hover {
 .albumTile{
 	display: flex;
 	flex-direction: column;
-	margin-left: 5px;
-	margin-right: 5px;
-	width: 130px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 145px;
 }
 
 .albumCover{
-	width: 130px;
+	width: 145px;
+}
+
+.movieTile{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 145px;
+}
+
+.moviePoster{
+	width: 145px;
 }
 
 /* FORTUNE TELLER PAGE */
