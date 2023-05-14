@@ -5,18 +5,17 @@
     <meta name="description" content="grace's homepage">
     <meta name="keywords" content="grace manning, homepage, cows">
     <meta name="author" content="grace manning">
+
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="icon" type="image/png" href="assets/favicon.ico">
 
     <title>grace's portal</title>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
         $(function () {
             $("#navbarSection").load("components/navbar.html");
-        });
-        $(function () {
-            $("#extrasSection").load("components/extras.html");
         });
         $(function () {
             $("#sidebarSection").load("components/sidebar.html");
@@ -25,23 +24,19 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <div id="navbarSection"></div>
-        <div class="mainhbox">
-            <div id="extrasSection"></div>
+        <div class="mainSection">
             <div class="mainContent">
-                <div class="pagecontent">
-                    <div>
-                        <p class="textcontent">
-                            research page is under construction!
-                        </p>
-                        <img src="assets/gifs/construction-2.gif">
-                    </div>
+                <div class="contentBoxCenter">
+                    <p>
+                        research page is under construction!
+                    </p>
+                    <br>
+                    <img src="assets/gifs/construction-2.gif">
                 </div>
             </div>
-            <div>
-                <div id="sidebarSection"></div>
-            </div>
+            <div id="sidebarSection"></div>
         </div>
     </div>
 </body>
