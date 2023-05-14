@@ -12,6 +12,30 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url("./assets/fonts/ComicSans/comic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url("./assets/fonts/ComicSans/comicbd.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url("./assets/fonts/ComicSans/comici.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url("./assets/fonts/ComicSans/comicz.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -43,7 +67,7 @@
 }
 
 body {
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-family: "Comic Sans MS";
 	/*background-image: url(background.gif);
 	background-repeat: repeat;
 	background-color: #c5c5f0;*/
