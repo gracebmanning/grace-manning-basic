@@ -6,18 +6,23 @@
     <br>
     <a href="https://www.linkedin.com/in/grace-manning/" target="_blank">linkedin</a>
 
-    <br><br><br>
+    <br><br>
     <h3 class="sidebarh3">contact</h3>
     <a href="mailto:gracebmanning@gmail.com">email</a>
     <br>
     <img src="../assets/gifs/flying_envelope.gif">
 
-    <br><br>
+    <br>
+    <h3 class="sidebarh3">established</h3>
+    <p>May 8, 2023</p>
+
+    <br>
     <h3 class="sidebarh3">last updated</h3>
     <p id="lastModified"></p>
 </div>
 
 <script>
-    const date = new Date(document.lastModified).toDateString();
-    document.getElementById("lastModified").innerText = date;
+    const dateArray = new Date(document.lastModified).toDateString().split(' ');
+    const lastMod = dateArray[1] + ' ' + dateArray[2] + ', ' + dateArray[3];
+    document.getElementById("lastModified").innerText = lastMod;
 </script>

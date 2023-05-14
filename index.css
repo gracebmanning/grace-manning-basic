@@ -155,6 +155,11 @@ a:hover {
 	width: 100%;
 }
 
+.navSeparator{
+	overflow: hidden;
+	white-space: nowrap;
+}
+
 /* MAIN CONTENT */
 .container {
 	margin: auto;
@@ -167,12 +172,14 @@ a:hover {
 	flex-direction: row;
 	width: 78%;
 	min-height: 100vh;
+	margin: 0px;
 	background: url('../../assets/images/rollinghills.jpg');
 }
 
 .mainContent {
 	width: 80%;
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .contentBoxCenter {
@@ -311,4 +318,56 @@ a:hover {
 
 #catonpiano-gif{
 	width: 250px;
+}
+
+#pinkPanther{
+	height: 190px;
+}
+
+@media only screen and (max-width: 800px) {
+	#navbarSection{
+		max-width: 200px;
+	}
+
+	.navheader{
+		flex-direction: column;
+	}
+
+	#navtitle{
+		font-size: 20px;
+	}
+	
+	#navsubtitle{
+		font-size: 14px;
+	}
+
+	.nav-links{
+		font-size: 18px;
+	}
+
+	.mainContent{
+		width: 70%;
+	}
+	
+	#hiImGrace{
+		font-size: 60px;
+	}
+	
+	#cow{
+		height: 150px;
+	}
+
+	#sidebarSection{
+		width: 30%;
+	}
+
+	.twoColumnBox{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fortunes-title{
+		font-size: 50px;
+	}
+
 }
