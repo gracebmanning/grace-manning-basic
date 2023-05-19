@@ -8,8 +8,8 @@
     <meta name="author" content="grace manning">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.ico">
 
     <title>grace's portal</title>
 
@@ -17,10 +17,10 @@
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
         $(function () {
-            $("#navbarSection").load("components/navbar.html");
+            $("#navbarSection").load("../components/navbar.html");
         });
         $(function () {
-            $("#sidebarSection").load("components/sidebar.html");
+            $("#sidebarSection").load("../components/sidebar.html");
         });
     </script>
 </head>
@@ -30,17 +30,18 @@
         <div id="navbarSection"></div>
         <div class="mainSection">
             <div class="mainContent">
-                <div class="contentBoxCenter">
+                <div class="blogNavigation">
+                    <a href="">← prev</a>
+                    <h4 class="nomargins">BLOG POSTS</h4>
+                    <a href="">next →</a>
+                </div>
+                <div class="contentBoxLeft">
+                    <h2 class="nomargins">Title</h2>
+                    <h3 class="nomargins" style="font-weight: normal;">Publish date</h3>
+                    <br>
                     <p>
-                        A cow-themed calculator, available on iOS and Android!
-                        <br>
-                        <b>Projected release date: June 2023</b>
+                        Text
                     </p>
-                    <br>
-                    <p>Cowculator page is under construction!</p>
-                    <br>
-                    <img src="./assets/gifs/construction.gif"
-                        alt="a construction worker hitting a small object with a hammer. He wears a yellow hard hat. Behind him is a black & yellow caution barrier.">
                 </div>
             </div>
             <div id="sidebarSection"></div>

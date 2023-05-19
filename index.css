@@ -5,36 +5,35 @@
     src: url('./assets/fonts/Royalacid_open.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+	font-display: swap;
 }
 @font-face{
     font-family: "TiltPenX";
     src: url("./assets/fonts/TiltPenX.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+	font-display: swap;
 }
 @font-face{
     font-family: "Comic Sans MS";
     src: url("./assets/fonts/ComicSans/comic.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+	font-display: swap;
 }
 @font-face{
     font-family: "Comic Sans MS";
     src: url("./assets/fonts/ComicSans/comicbd.woff") format("woff");
     font-weight: bold;
     font-style: normal;
+	font-display: swap;
 }
 @font-face{
     font-family: "Comic Sans MS";
     src: url("./assets/fonts/ComicSans/comici.woff") format("woff");
     font-weight: normal;
     font-style: italic;
-}
-@font-face{
-    font-family: "Comic Sans MS";
-    src: url("./assets/fonts/ComicSans/comicz.woff") format("woff");
-    font-weight: bold;
-    font-style: italic;
+	font-display: swap;
 }
 
 /* width */
@@ -380,8 +379,13 @@ a:hover {
 	width: 250px;
 }
 
-#pinkPanther{
+.pinkPanther{
 	height: 190px;
+}
+
+.littleGuys{
+	width: 88px;
+	height: 31px;
 }
 
 @media only screen and (max-width: 800px) {
